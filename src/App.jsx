@@ -123,7 +123,7 @@ export default function App() {
           width="70%"
           margin="0 auto"
         >
-          <Heading level={1}>My Notes App</Heading>
+          <Heading level={1}>Photo Reminder App</Heading>
           <View as="form" margin="3rem 0" onSubmit={createNote}>
             <Flex
               direction="column"
@@ -133,7 +133,7 @@ export default function App() {
             >
               <TextField
                 name="name"
-                placeholder="Note Name"
+                placeholder="Group Photo Activity"
                 label="Note Name"
                 labelHidden
                 variation="quiet"
@@ -141,7 +141,7 @@ export default function App() {
               />
               <TextField
                 name="description"
-                placeholder="Note Description"
+                placeholder="Who is in it? Where did it happen?"
                 label="Note Description"
                 labelHidden
                 variation="quiet"
@@ -156,12 +156,12 @@ export default function App() {
               />
 
               <Button type="submit" variation="primary">
-                Create Note
+                Create Photo Record
               </Button>
             </Flex>
           </View>
           <Divider />
-          <Heading level={2}>Current Notes</Heading>
+          <Heading level={2}>Past Group Photos</Heading>
           <Grid
             margin="3rem 0"
             autoFlow="column"
